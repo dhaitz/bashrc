@@ -65,6 +65,7 @@ alias gd="git diff"
 alias gk='gitk --all &'
 alias gr="git rebase"
 alias gf="git fetch"
+alias gitlog='git log --pretty=" * [%h] %gd %d %s [<%an> %cd]" --date=local -5'
 
 export FLEX_HOME=~/bin/flex
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
